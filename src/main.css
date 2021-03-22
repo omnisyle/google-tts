@@ -2,6 +2,18 @@
 body {
   @apply font-sans bg-indigo-200;
 }
-
 @tailwind components;
+
+.text-input {
+  @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50;
+}
+
+.input-group {
+  @apply block mb-2;
+}
+
+.submit-btn {
+  @apply flex-shrink-0 bg-purple-600 text-white text-base font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200;
+}
+
 @tailwind utilities;

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import ApiKey from './lib/ApiKey.svelte';
 </script>
 
 <main>
@@ -6,17 +7,7 @@
     <div class="p-4">
       <h1 class="text-3xl mb-4">Google TTS</h1>
       <div class="flex flex-col form">
-        <div class="input-group">
-          <label for="api-key" class="block text-gray-700 mb-1">
-            API Key
-          </label>
-          <input
-            name="api-key"
-            type="text"
-            class="text-input"
-            placeholder="Enter your API key"
-          />
-        </div>
+        <ApiKey />
 
         <div class="input-group">
           <label for="body" class="block text-gray-700 mb-1">
@@ -74,17 +65,3 @@
     </div>
   </div>
 </main>
-
-<style>
-  .text-input {
-    @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50;
-  }
-
-  .input-group {
-    @apply block mb-2;
-  }
-
-  .submit-btn {
-    @apply flex-shrink-0 bg-purple-600 text-white text-base font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200;
-  }
-</style>
